@@ -1,0 +1,484 @@
+/* головний колір тексту #212121 */
+/* додатковий колір тексту rgba(117, 117, 117, 1) */
+/* білий #FFFFFF */
+/* акцент #2196F3 */
+/* колір фону на деяких секціях #F5F4FA */
+/* колір фону в герой та футер #2F303A */
+
+p {
+    margin: 0px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  img {
+    display: block;
+  }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+}
+
+
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: rgba(117, 117, 117, 1);
+    --accent-color: #2196F3;
+    --primary-background-color: #FFFFFF;
+    --hero-footer-color: #2F303A;
+    --section-color: #F5F4FA;
+} 
+
+body {
+    background-color: var(--primary-background-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.28px;
+}
+
+/* header */
+/* logo */
+.logo{
+    text-decoration: none;
+    color: #000;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.78px;
+}
+
+.logo.footer-logo {
+    color: var(--primary-background-color);
+}
+
+.logo > .title {
+    color: var(--accent-color);
+}
+
+/* primary settings list */
+.list {
+    list-style: none;
+}
+
+/* header */
+
+header {
+    border-bottom: solid 1px #ECECEC;
+}
+
+/* site-nav */
+
+
+
+.nav-style {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.site-nav {
+ display: flex;
+ margin-left: 93px;
+ padding: 32px 0px;
+
+}
+
+.site-nav .link{
+    display: block;
+}
+.site-nav .link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.site-nav .items + .items {
+    margin-left: 50px;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--accent-color)
+}
+
+/* site-contact */
+
+.nav-style .site-contact {
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+}
+
+
+
+.site-contact .items + .items {
+    margin-left: 40px;
+}
+
+.site-contact .link{
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.site-contact .link:hover,
+.site-contact .link:focus{
+    color: var(--accent-color);
+}
+/* end header */
+
+/* hero */
+.hero {
+ padding-top:200px;
+ padding-bottom: 200px;
+ width: 1600px;
+ height: 600px;
+ background-color: var(--hero-footer-color);
+ text-align: center;
+}
+
+.hero-style {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.hero-title {
+    color: var(--primary-background-color);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 44px;
+    width: 696px;
+    height: 120px;
+    font-weight: 900;
+    line-height: 1.36; 
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+
+}
+
+.hero-button {
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+    padding: 10px 20px;
+    /* потім прибрати */
+    margin: 30px auto 0px;            
+    display: block;
+    /* сюда */
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+/* advantages */
+
+.advantages{
+    margin: 0px auto;
+    padding-top: 94px;
+}
+
+
+
+.advantages li {
+    width: 270px;
+    display: inline-block;
+}
+
+.advantages .list:not(:first-child){
+    margin-left: 30px;
+}
+
+
+
+.advantages .title {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.advantages .text {
+    color: var(--title-text-color);
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.7; 
+    letter-spacing: 0.42px;
+} 
+
+/* work */
+.work {
+    padding-top: 94px;
+
+}
+.work .list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+.work .title {
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.08px;
+    
+}
+
+.work-image {
+    width: 370px;
+    height: 294px;
+}
+
+
+/* our team */
+.team {
+    margin-top: 94px;
+    background-color: #F5F4FA;
+}
+
+
+ .team-style {
+    padding: 94px 0px;
+    
+ }
+ 
+.team-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.example-team {
+    background-color: var(--primary-background-color);
+}
+
+.example-team:not(:last-child){
+    margin-right: 30px;
+}
+
+
+
+.team-image {
+    width: 270px;
+    height: 260px;
+}
+.team-title {
+    color: var(--primary-text-color);
+   text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.08px;
+
+}
+
+.team-name{
+    color: var(--primary-text-color);
+   
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    text-align: center;
+}
+.team-text {
+    color: var(--title-text-color);
+    
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/* footer */
+/* address */
+
+footer {
+    background-color: var(--hero-footer-color);
+    width: 1600px;
+    height: 251px;
+    padding: 60px 0px;
+}
+
+.address {
+    padding-top: 28px;
+    width: 231px;
+}
+
+
+
+.address-text {
+    color: var(--primary-background-color);
+    font-size: 14px;
+    line-height: 1.7; 
+    letter-spacing: 0.42px;
+}
+
+.address-contact li {
+    padding-top: 12px;
+}
+
+.address-contact .link{
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.address-contact .link:hover,
+.address-contact .link:focus{
+    color: var(--accent-color);
+}
+
+/* параметри щоб зробити ефект поточної сторінки */
+/* для посиланання в site-nav додаємо 2 класа link і current  */
+/* <ul class="site-nav list">
+    <li><a href="./index.html" class="link сurrent">Студія</a></li>
+    <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+    <li><a href="" class="link">Контакти</a></li>
+</ul> */
+/* тоді в стилях додаємо  */
+
+/* .site-nav .link.current {
+    сolor : колір для поточної сторінки
+} */
+
+/* portfolio */
+/* nav */
+.site-nav li+li {
+    margin-left: 50px;
+
+}
+
+.site-contact li + li {
+    margin-left: 40px;
+}
+
+
+
+/* examples*/
+
+.examples{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+
+
+.nav-list {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+.nav-list > li:not(:last-child) {
+    margin-right: 8px;
+}
+
+
+.nav-button {
+    color: var(--primary-text-color);
+    background-color: var(--section-color);
+
+    font-family: Roboto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63; 
+    letter-spacing: 0.48px;
+    cursor: pointer;
+    border: none;
+    transition: background-color, color 0.2s linear;
+    border-radius: 4px;
+    padding: 6px 22px;
+}
+
+.nav-button:focus,
+.nav-button:hover{
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+}
+
+.examples-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.examples-text {
+    background-color: var(--primary-background-color);
+    outline: solid #EEEEEE;
+}
+
+.description-example {
+    padding: 20px 24px;
+}
+.examples-link {
+    text-decoration: none;
+}
+
+.example-image {
+    width: 370px;
+    height: 294px;
+}
+
+.example-title {
+    color: var(--primary-text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2; 
+    letter-spacing: 1.08px;
+}
+
+.example-text {
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.88; 
+    letter-spacing: 0.48px;
+}
+
+
+/* 2 варіанта роботи, через calc і фіксована верстка (фіксовано в пікселях) */
+
